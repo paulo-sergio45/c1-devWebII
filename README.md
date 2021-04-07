@@ -1,6 +1,6 @@
-#API COVID-19
+<h1 align="center">API COVID-19</h1>
 
-##unidade de saude CRUDE
+<p align="center">unidade de saude CRUDE</p>
 ```
 get
 ```
@@ -32,7 +32,7 @@ del:id
 ```
 
 
-##pessoas CRUDE
+<p align="center">pessoas CRUDE</p>
 ```
 get
 ```
@@ -70,8 +70,7 @@ body:{
 ```
 del:id
 ```
-
-##agenda CRUDE
+<p align="center">agenda CRUDE</p>
 ```
 get
 ```
