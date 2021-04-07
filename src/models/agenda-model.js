@@ -2,11 +2,11 @@ const mongose = require('mongoose');
 
 const agenda = mongose.Schema({
     unisaude_id: {
-        type: mongose.Schema.Types.ObjectId,
+        type: mongose.Schema.Types.String,
         required: true
     },
     pessoa_id: {
-        type: mongose.Schema.Types.ObjectId,
+        type: mongose.Schema.Types.String,
         required: true
     },
     data_hora: {
@@ -22,4 +22,10 @@ const agenda = mongose.Schema({
         required: true
     }
 
-})
+});
+
+let Agenda = module.exports = mongose.model('agenda', agenda);
+
+module.exports.get = function(callback, limit) {
+    Agenda.find(callback).limit(limit);
+}

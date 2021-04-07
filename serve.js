@@ -12,6 +12,10 @@ const pessoa = require('./src/routes/pessoa-rotas');
 const agenda = require('./src/routes/agenda-rotas');
 const uniSaude = require('./src/routes/unisaude-rotas');
 
+server.use(express.urlencoded({extended: true})); 
+server.use(express.json());   
+
+
 //passando as rotas para as classes responsaveis
 server.use('/api/pessoa/', pessoa);
 server.use('/api/agenda/', agenda);

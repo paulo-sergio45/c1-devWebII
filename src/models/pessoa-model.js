@@ -2,7 +2,7 @@ const mongose = require('mongoose');
 
 const pessoa = mongose.Schema({
     unisaude_id: {
-        type: mongose.Schema.Types.ObjectId,
+        type: mongose.Schema.Types.String,
         require: true
     },
     nome: {
@@ -34,4 +34,11 @@ const pessoa = mongose.Schema({
         required: true
     }
 
-})
+});
+
+
+let Pessoa = module.exports = mongose.model('pessoa', pessoa);
+
+module.exports.get = function(callback, limit) {
+    Pessoa.find(callback).limit(limit);
+}
