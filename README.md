@@ -1,9 +1,11 @@
 # API COVID-19
 
-## Unidade de saude CRUDE:
+## Unidade de saude CRUDE
+###### consulta todas as unidades de saude:
 ```
 get
 ```
+###### criação da unidade de saude:
 ``` 
 post 
 body:{       
@@ -15,9 +17,11 @@ body:{
         "latlong":"46546464"
 }
 ```
+###### consulta a unidades de saude por id:
 ```
 get:id
 ```
+###### atualizar unidade de saude:
 ```
 put:id 
 body:{
@@ -27,15 +31,18 @@ body:{
     "latlong": "46546464"
 }
 ```
+###### deletar unidade de saude:
 ```
 del:id
 ```
 
 
-## Pessoas CRUDE:
+## Pessoas CRUDE
+###### consulta todas as pessoas:
 ```
 get
 ```
+###### criação da pessoas:
 ``` 
 post 
 body:{       
@@ -50,9 +57,11 @@ body:{
  
 }
 ```
+###### consulta a pessoa por id:
 ```
 get:id
 ```
+###### atualizar pessoa:
 ```
 put:id 
 body:{       
@@ -67,13 +76,17 @@ body:{
  
 }
 ```
+###### deletar pessoa:
 ```
 del:id
 ```
-## Agenda CRUDE:
+
+## Agenda CRUDE
+###### consulta todas as agendas:
 ```
 get
 ```
+###### criação da agenda:
 ``` 
 post 
 body:{       
@@ -85,9 +98,11 @@ body:{
  
 }
 ```
+###### consulta por id:
 ```
 get:id
 ```
+###### atualizar agenda:
 ```
 put:id 
 body:{       
@@ -100,6 +115,7 @@ body:{
  
 }
 ```
+###### deletar agenda:
 ```
 del:id
 ```
