@@ -42,7 +42,7 @@ del:id
 ```
 get
 ```
-###### criação da pessoas:
+###### criação da pessoa:
 ``` 
 post 
 body:{       
