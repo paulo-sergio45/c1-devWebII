@@ -84,7 +84,7 @@ exports.listapessoaPorId = function (req, res) {
                 individuo: pessoa
             })
         }
-    });
+    }).populate('unidade de saude');
 }
 
 exports.atualizarpessoa = function (req, res) {
@@ -125,7 +125,7 @@ exports.atualizarpessoa = function (req, res) {
 
         }
 
-    });
+    }).populate('unidade de saude');
 }
 
 exports.removerpessoa = function (req, res) {
@@ -144,4 +144,3 @@ exports.removerpessoa = function (req, res) {
         }
     });
 }
-
