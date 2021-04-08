@@ -96,6 +96,7 @@ exports.atualizarpessoa = function (req, res) {
                 status: "error",
                 message: `Não foi possível recuperar O individuo de id: ${pessoaId}`
             });
+
         } else {
             pessoa.unisaude_id = req.body.unisaude_id? req.body.unisaude_id : pessoa.unisaude_id;
             pessoa.nome = req.body.nome ? req.body.nome : pessoa.nome;

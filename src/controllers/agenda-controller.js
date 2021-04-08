@@ -77,14 +77,16 @@ exports.listaagendaPorId = function (req, res) {
                 message: `Agenda recuperada com sucesso!`,
                 agenda: agenda
             })
+
         }
-    });
+    }).populate('unidade de saude').populate('pessoa');
 }
 
 exports.atualizaragenda = function (req, res) {
     let agendaId = req.params.id;
 
     agendaModel.findById(agendaId, function (err, agenda) {
+        
         if (err) {
             res.json({
                 status: "error",
@@ -116,7 +118,7 @@ exports.atualizaragenda = function (req, res) {
 
         }
 
-    });
+    }).populate('unidade de saude').populate('pessoa');
 }
 
 exports.removeragenda = function (req, res) {
